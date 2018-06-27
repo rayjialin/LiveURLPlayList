@@ -13,6 +13,8 @@
 		389E937820E3F82800743A3F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 389E937720E3F82800743A3F /* Assets.xcassets */; };
 		389E937B20E3F82800743A3F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 389E937920E3F82800743A3F /* LaunchScreen.storyboard */; };
 		389E938320E3F9BF00743A3F /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389E938220E3F9BF00743A3F /* VideoViewController.swift */; };
+		389E938520E3FBED00743A3F /* LiveURLCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389E938420E3FBED00743A3F /* LiveURLCell.swift */; };
+		389E938720E3FEF500743A3F /* LiveURLList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389E938620E3FEF500743A3F /* LiveURLList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		389E937A20E3F82800743A3F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		389E937C20E3F82800743A3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		389E938220E3F9BF00743A3F /* VideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoViewController.swift; sourceTree = "<group>"; };
+		389E938420E3FBED00743A3F /* LiveURLCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveURLCell.swift; sourceTree = "<group>"; };
+		389E938620E3FEF500743A3F /* LiveURLList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveURLList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,14 +61,40 @@
 			isa = PBXGroup;
 			children = (
 				389E937020E3F82500743A3F /* AppDelegate.swift */,
-				389E937220E3F82500743A3F /* ViewController.swift */,
-				389E937420E3F82500743A3F /* Main.storyboard */,
-				389E938220E3F9BF00743A3F /* VideoViewController.swift */,
+				389E938A20E3FFAC00743A3F /* Controller */,
+				389E938820E3FF8F00743A3F /* Model */,
+				389E938920E3FF9E00743A3F /* View */,
 				389E937720E3F82800743A3F /* Assets.xcassets */,
-				389E937920E3F82800743A3F /* LaunchScreen.storyboard */,
 				389E937C20E3F82800743A3F /* Info.plist */,
 			);
 			path = AVPlayerDemo;
+			sourceTree = "<group>";
+		};
+		389E938820E3FF8F00743A3F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				389E938620E3FEF500743A3F /* LiveURLList.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		389E938920E3FF9E00743A3F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				389E938420E3FBED00743A3F /* LiveURLCell.swift */,
+				389E937420E3F82500743A3F /* Main.storyboard */,
+				389E937920E3F82800743A3F /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		389E938A20E3FFAC00743A3F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				389E937220E3F82500743A3F /* ViewController.swift */,
+				389E938220E3F9BF00743A3F /* VideoViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,6 +171,8 @@
 				389E937320E3F82500743A3F /* ViewController.swift in Sources */,
 				389E938320E3F9BF00743A3F /* VideoViewController.swift in Sources */,
 				389E937120E3F82500743A3F /* AppDelegate.swift in Sources */,
+				389E938720E3FEF500743A3F /* LiveURLList.swift in Sources */,
+				389E938520E3FBED00743A3F /* LiveURLCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
