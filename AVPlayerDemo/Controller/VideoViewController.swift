@@ -19,26 +19,14 @@ class VideoViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-//        let urlString = "http://b028.wpc.azureedge.net/80B028/Samples/a38e6323-95e9-4f1f-9b38-75eba91704e4/5f2ce531-d508-49fb-8152-647eba422aec.ism/Manifest(format=m3u8-aapl)"
-//        guard let urlString = urlString else {return}
-//        if let url = NSURL(string: urlString){
-//            playerView = AVPlayer(url: url as URL)
-//            playerViewController.player = playerView
-//            self.present(playerViewController,animated: true){
-//                self.playerViewController.player?.play()
-//            }
-//        }
+        guard let urlString = urlString else {return}
+        if let url = NSURL(string: urlString){
+            playerView = AVPlayer(url: url as URL)
+            playerViewController.player = playerView
+            self.present(playerViewController,animated: true){
+                self.playerViewController.player?.play()
+            }
+        }
 
-    }
-
-    override func viewDidAppear(_ animated: Bool) {
-                let urlString = "http://b028.wpc.azureedge.net/80B028/Samples/a38e6323-95e9-4f1f-9b38-75eba91704e4/5f2ce531-d508-49fb-8152-647eba422aec.ism/Manifest(format=m3u8-aapl)"
-                if let url = NSURL(string: urlString){
-                    playerView = AVPlayer(url: url as URL)
-                    playerViewController.player = playerView
-                    self.present(playerViewController,animated: true){
-                        self.playerViewController.player?.play()
-                    }
-                }
     }
 }
